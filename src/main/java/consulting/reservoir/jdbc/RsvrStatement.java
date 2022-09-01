@@ -23,7 +23,7 @@ import java.sql.Statement;
 /**
  * RsvrJdbc が提供する Statement です。
  * 
- * 基本的には RsvrPreparedStatement を使用してください。
+ * `RsvrStatement` はなるべく使用せずに、基本的に `RsvrPreparedStatement` を使用してください。
  * 
  * @see java.sql.PreparedStatement
  * @version 1.0.2.20220901
@@ -41,8 +41,7 @@ public class RsvrStatement implements AutoCloseable {
     }
 
     /**
-     * [Rsvr独自] 与えられた PreparedStatement をもとに RsvrJdbc が提供する RsvrPreparedStatement
-     * インスタンスを作成します。
+     * [Rsvr独自] 与えられた Statement をもとに RsvrJdbc が提供する RsvrStatement インスタンスを作成します。
      * 
      * @param stmt 通常の PreparedStatement。
      */

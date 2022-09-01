@@ -144,14 +144,14 @@ public class RsvrResultSet implements AutoCloseable {
     }
 
     /**
-     * [Rsvr独自] 内部的に保持する columnIndex の値をインクリメントします。
+     * [Rsvr独自][index++] 内部的に保持する columnIndex の値をインクリメントします。
      */
     public void incrementColumnIndex() {
         internalColumnIndex++;
     }
 
     /**
-     * [Rsvr独自] RsvrResultSet 内部の columnIndex をリセットします。
+     * [Rsvr独自][index=1] RsvrResultSet 内部の columnIndex をリセットします。
      * 
      * なお、このメソッドを呼ばなくても、以下のメソッド呼び出しのタイミングで RsvrResultSet 内部の columnIndex
      * のリセットを実施します。（以下のメソッドがこのメソッドを呼び出します）

@@ -142,7 +142,7 @@ public class RsvrPreparedStatement extends RsvrStatement {
     }
 
     /**
-     * [Rsvr独自] 内部的に保持する parameterIndex の値をインクリメントします。
+     * [Rsvr独自][index++] 内部的に保持する parameterIndex の値をインクリメントします。
      * 
      * 通常はこのメソッドは直接呼び出すシーンはないと想定します。
      */
@@ -151,7 +151,7 @@ public class RsvrPreparedStatement extends RsvrStatement {
     }
 
     /**
-     * [Rsvr独自] RsvrPreparedStatement 内部の parameterIndex のリセットします。
+     * [Rsvr独自][index=1] RsvrPreparedStatement 内部の parameterIndex のリセットします。
      * 
      * なお、このメソッドを明示的に呼び出す以外に、 以下のメソッド呼び出しのタイミングで RsvrPreparedStatement 内部の
      * parameterIndex のリセットはおこなわれます。（以下のメソッドがこのメソッドを呼び出します）
