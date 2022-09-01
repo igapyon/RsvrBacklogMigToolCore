@@ -91,7 +91,7 @@ public class RsvrResultSetMetaData {
     }
 
     /**
-     * [Rsvr独自] RsvrResultSetMetaData 内部の columnIndex をリセットします。
+     * [Rsvr独自][index=1] RsvrResultSetMetaData 内部の columnIndex をリセットします。
      */
     public void resetColumnIndex() {
         internalColumnIndex = 1;
@@ -116,14 +116,14 @@ public class RsvrResultSetMetaData {
     }
 
     /**
-     * [Rsvr独自] 内部的に保持する columnIndex の値をインクリメントします。
+     * [Rsvr独自][index++] 内部的に保持する columnIndex の値をインクリメントします。
      */
     public void incrementColumnIndex() {
         internalColumnIndex++;
     }
 
     /**
-     * [Rsvr独自] 次の columnIndex に進みます。カラム数を超えた場合は false を返却します。
+     * [Rsvr独自][index++] 次の columnIndex に進みます。カラム数を超えた場合は false を返却します。
      * 
      * @return 次の columnIndex に相当する列が存在したら true。列が存在しなければ false.
      * @throws SQLException SQL例外が発生した場合。
