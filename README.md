@@ -67,3 +67,4 @@ mvn clean install
 - 課題タイプ、色も欲しい
 - Wikiについてタグに対応してほしい。
 - IMPORT: Category, Milestone, Version の項目値を除去する操作系統が、IMPORTの Backlog API 経由にてうまく反映されない。そもそもAPIの呼び方が正しくないのかもしれないが。。。
+
